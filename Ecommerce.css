@@ -1,0 +1,580 @@
+/* =======================
+       HEADER START
+========================== */
+:root {
+  --bgcolor: #1a79cf;
+}
+.search{
+  margin-top: 5px;
+  margin-right: 50px;
+  /* padding: 5px; */
+  border: 1px solid black;
+  border-radius: 2px;
+  width: 200px;
+  height: 35px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  background-color: var(--bgcolor);
+  padding: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  color: white;
+  align-self: center;
+  margin-left: 1.2rem;
+  font-size: 2.5rem;
+  height: 25px;
+}
+.logo p{
+  padding-bottom: 80px;
+}
+.nav-bar {
+  margin: auto;
+}
+
+.nav-bar a {
+  color: white;
+  padding: 1.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.nav-bar a:hover{
+  color: yellow;
+  background-color: black;
+  border: 50px;
+  border-radius: 5px;
+  
+}
+button:hover{
+  color: yellow;
+  background-color: black;
+  border: 50px;
+  border-radius: 5px;
+}
+
+.menu-icon {
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+button {
+  font-size: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+@media screen and (max-width: 1024px) {
+  .nav-bar {
+    display: none;
+    position: absolute;
+    top: 3.7rem;
+    left: 0;
+    width: 100%;
+    background-color: var(--bgcolor);
+    text-align: center;
+  }
+
+  .nav-bar.responsive {
+    display: block;
+  }
+
+  .nav-bar a {
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+    z-index: 1;
+  }
+
+  button {
+    padding: 0.4rem;
+  }
+  .logo {
+    font-size: 1.4rem;
+  }
+}
+
+/* =======================
+       HEADER END
+========================== */
+
+/* =======================
+       CRAUSAL START
+========================== */
+
+* {box-sizing: border-box;}
+body {
+    font-family: Verdana, sans-serif;
+background-color:#e06377;
+}
+.mySlides {display: none;}
+#img147 {
+    vertical-align: middle;
+    height:500px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text1 {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+} */
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* =======================
+       CRAUSAL END
+========================== */
+
+/* ===========================
+         CATEGORIES START
+  ============================ */
+
+.categoriesall {
+  margin-top:-250px;
+  width: 100%;
+  height: 900px;
+  justify-content: space-evenly;
+}
+h1 {
+  text-align: center;
+  background: #6b0f05;
+  width: 100%;
+  height: 75px;
+  padding-top: 5px;
+  font-size: 50px;
+  color: #fff;
+  margin-top: 200px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  width: 22.5%;
+  border-radius: 20px;
+  margin: 40px 40px 0px 30px;
+  height: 350px;
+  /* opacity: .5; */
+  background-color: #f2f2f2;
+  font-size: 20px;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: scale(1.25);
+  z-index: 1.5;
+  /* opacity: .9; */
+  /* color: #00FFFF; */
+  display: block;
+}
+#imagcategorie {
+  /* border-radius: 5px 5px 0 0; */
+  height: 300px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.text {
+  text-align: center;
+  color: #1b5e8f;
+}
+
+.categories {
+  display: flex;
+  width: 100%;
+}
+
+.image {
+  display: flex;
+}
+
+.lastimage {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+}
+/* =======================
+      CATEGORIES END
+  ======================= */
+
+
+
+  /* ===================================
+   LATEST OR MOST VALUABLE PRODUCT START
+  ====================================== */
+.latest-most {
+  width: 100%;
+  height: 400px;
+  /* background-color: #0082e6; */
+  margin-top: 400px;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.latest {
+  background-color: rgb(224, 232, 232);
+  width: 45%;
+  height: 350px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.latest a {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  /* background-image: url(/res/image/watch-1.jpg); */
+  margin: 25px;
+  /* border: 1px solid grey; */
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+.latestitem {
+  width: 250px;
+  height: 300px;
+  background-color: #f7cac9;
+  margin: 25px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+h2 {
+  font-size: 3cqi;
+  text-align: center;
+  padding-top: 100px;
+  color: black;
+}
+
+.latestimag {
+  width: 40%;
+  height: 300px;
+  background-image: url(/img1/Electronic5.jpg);
+  margin: 25px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+.most-valuable {
+  background-color: rgb(224, 232, 232);
+  width: 45%;
+  height: 350px;
+  display: flex;
+  border-radius: 10px;
+}
+
+.most-valuable a {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  /* background-image: url(/res/image/watch-1.jpg); */
+  margin: 25px;
+  /* border: 1px solid grey; */
+  border-radius: 10px;
+  margin-left: 40px;
+}
+
+.mostiteam {
+  width: 250px;
+  height: 300px;
+  background-color: #f7cac9;
+  margin: 25px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+.mostimage {
+  width: 40%;
+  height: 300px;
+  background-image: url(/img1/T-shirt-3.jpg);
+  margin: 25px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-top: 5px;
+}
+
+/* ===================================
+   LATEST OR MOST VALUABLE PRODUCT END
+  ==================================== */
+
+body{
+    height: 500px;
+  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+span{
+  color: gold;
+}
+
+/* ==============================
+          FOOTER START
+================================= */
+
+footer{
+  width: 100%;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  background:black;
+  text-align: center;
+}
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#imgage147{
+    height: 100px;
+    width: 150px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    /* margin-top: 80px; */
+}
+footer .content p,a{
+  color: #fff;
+}
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 16px;
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #d9d9d9;
+  background: #000;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+}
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: #d9d9d9;
+  background: #eb2f06;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid #eb2f06;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  #eb2f06;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 45px;
+  width: 45px;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  border: 2px solid #222222;
+  margin: 30px 5px 0 0;
+  transition: all 0.3s ease;
+}
+.content .media-icons a:hover{
+  border-color: #eb2f06;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: #eb2f06;
+}
+footer a{
+  transition: all 0.3s ease;
+}
+footer a:hover{
+  color: #eb2f06;
+}
+.slider{
+  height: 110px;
+  width: 100%;
+  background-color:white;
+}
+.gap{
+  height: 50px;
+  width: 100%;
+  /* background-color:white; */
+}
+
+.f-credits{
+    padding-top: 30px;
+    width: 100%;
+    color: rgb(241,255,255);
+    background-color: maroon;
+    /* rgb(27,94,143); */
+    height: 75px;
+    text-align: center;
+}
+
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
+}
+
+/* ==============================
+          FOOTER END
+================================= */
